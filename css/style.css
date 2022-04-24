@@ -101,7 +101,7 @@ margin-top: 100px;
     margin-right: 0px;
     width:15%;
     flex-shrink: 1;
-    
+    text-align: center;
 
 }
 
@@ -147,7 +147,13 @@ border-left:solid #fde910;
     list-style-type: none;
     
 }
+.promo__menu__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
 
+    color:#fde910;
+
+}
 
 
 
@@ -173,7 +179,7 @@ border-left:solid #fde910;
     margin-left: 0px;
     width:15%;
     flex-shrink: 1;
-    
+    text-align: center;
 }
 
 .promo__adv-title{
