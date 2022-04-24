@@ -1,77 +1,83 @@
 /* Задид main как flex-box */
-.promo{
+.promo {
 
     display: flex;
- border:solid;/* это потом нужно удалить */
- border-bottom:0px;/* это потом нужно удалить */
- justify-content: space-between;
+    border: solid;
+    /* это потом нужно удалить */
+    border-bottom: 0px;
+    /* это потом нужно удалить */
+    justify-content: space-between;
 
-margin-left:-1px ;
-margin-right:-1px  ;
-min-height: 1500px;
-margin:auto;
-min-width:2200px;
-margin-top: 100px;
-   
+    margin-left: -1px;
+    margin-right: -1px;
+    min-height: 1500px;
+    margin: auto;
+    min-width: 2200px;
+    margin-top: 100px;
+
 }
+
 /* далее разберём каждый элемент в отдельности(promo-menu,promo-content,promo-adv) */
 
 /* CENTER */
-.promo__content{
+.promo__content {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     justify-content: space-around;
-    width:70%;
+    width: 70%;
     background-size: 100% 60%;
     flex-shrink: 3;
-    
-  
+
+
 }
 
 
 /* вложенности promo-content'a */
-.promo__interactive{
+.promo__interactive {
 
     display: flex;
     justify-content: space-around;
-    background-color:white;
+    background-color: white;
     height: 40vh;
-  
-    }
+
+}
 
 
 /* бек центральной части */
 
 
 
-    .promo__bg{
+.promo__bg {
 
-       margin-top: 150px;
+    margin-top: 150px;
     margin-left: 0px;
     margin-right: 0px;
-       font-family: 'Roboto', sans-serif;
-       font-weight: 800;
-      color: white;
-      max-width:1000px;
-        
-      
-        
-     }
-     .promo__bg .promo__title{
-     
-         margin-top:10px;
-         font-size: 40px;
-         
-     }
-     .promo__bg .promo__ratings{
-     margin-top:20px;
-         color:  #fde910; 
-     }
-     .promo__descr{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: white;
+    max-width: 1000px;
 
-        font-size: 30px;
-       color: white;
-     }
+
+
+}
+
+.promo__bg .promo__title {
+
+    margin-top: 10px;
+    font-size: 40px;
+
+}
+
+.promo__bg .promo__ratings {
+    margin-top: 20px;
+    color: #fde910;
+}
+
+.promo__descr {
+
+    font-size: 30px;
+    color: white;
+}
 
 
 
@@ -94,64 +100,68 @@ margin-top: 100px;
 /* LEFT*/
 
 
-.promo__menu{
-   
-    background-color:#101113;
-   
+.promo__menu {
+
+    background-color: #101113;
+
     margin-right: 0px;
-    width:15%;
+    width: 15%;
     flex-shrink: 1;
     text-align: center;
 
 }
 
-.promo__menu .promo__menu-list{
+.promo__menu .promo__menu-list {
 
 
-    margin-top:20px;
+    margin-top: 20px;
 
 }
 
 
-.promo__menu-item_films ,.promo__menu-item_series{
+.promo__menu-item_films,
+.promo__menu-item_series {
 
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-   color: white;
-    border:0;
-   background-color:#101113;
-    margin-bottom:10px;
-    margin-top:20px;
+    color: white;
+    border: 0;
+    background-color: #101113;
+    margin-bottom: 10px;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 20px;
 
 }
-.promo__menu-item_films:hover{
 
-border-left:solid #fde910;
+.promo__menu-item_films:hover {
+
+    border-left: solid #fde910;
 
 
 }
-.promo__menu-item_series:hover{
 
-    border-left:solid #fde910;
-    
-    
-    }
+.promo__menu-item_series:hover {
+
+    border-left: solid #fde910;
 
 
+}
 
 
-.promo__menu-list li{
+
+
+.promo__menu-list li {
 
     list-style-type: none;
-    
+
 }
-.promo__menu__title{
+
+.promo__menu__title {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
 
-    color:#fde910;
+    color: #fde910;
 
 }
 
@@ -172,28 +182,29 @@ border-left:solid #fde910;
 
 /* RIGHT*/
 
-.promo__adv{
+.promo__adv {
     font-family: 'Roboto', sans-serif;
     background-color: #101113;
     font-size: 30px;
     margin-left: 0px;
-    width:15%;
+    width: 15%;
     flex-shrink: 1;
     text-align: center;
 }
 
-.promo__adv-title{
-    
-   
-    color: #fde910;  
-   
+.promo__adv-title {
+
+
+    color: #fde910;
+
 
 }
-.promo__adv-title{
-    
-   margin-top: 20px;
-    color: #fde910;  
-   
+
+.promo__adv-title {
+
+    margin-top: 20px;
+    color: #fde910;
+
 
 }
 
@@ -202,38 +213,39 @@ border-left:solid #fde910;
 
 
 
-.header{
-display: flex;
-margin:auto;
-background-color: white;
-position: fixed;
-top: -5px;
-width:100%;
-height:100px;
-justify-content: space-around;
+.header {
+    display: flex;
+    margin: auto;
+    background-color: white;
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
 
 
 
 }
 
-.header__search{
-  align-self:center;
-  
-}
-
-.header__search input{
-         border:0;
-         border-bottom: solid #101113;
-         background-color: white;
-         font-family: 'Roboto', sans-serif;
-         font-size: 20px;
-         
+.header__search {
+    align-self: center;
 
 }
-.header__logo{
 
-    align-self:center;
-  
+.header__search input {
+    border: 0;
+    border-bottom: solid #101113;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+
+}
+
+.header__logo {
+
+    align-self: center;
+
 }
 
 
@@ -259,95 +271,101 @@ justify-content: space-around;
 
 
 
-.new_film{
+.new_film {
 
-color: white;
-margin-left:10px;
-margin-bottom:10px;
-    margin-top:20px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 20px;
 
 }
-.new_film_active:hover{
 
-    border-left:solid #fde910;
-    
-    
-    }
+.new_film_active:hover {
+
+    border-left: solid #fde910;
 
 
+}
 
 
 
-.promo__interactive-item{
+
+
+.promo__interactive-item {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-   color: black;
-    border:0;
-  
+    color: black;
+    border: 0;
+
     display: flex;
 
-    margin-top:20px;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 5px;
     font-weight: 500;
     border-bottom: solid #fde910;
 
 }
-.promo__interactive-list li{
+
+.promo__interactive-list li {
     list-style-type: none;
- 
+
 }
-.add{
+
+.add {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
 
 
-.promo__interactive-title{
+.promo__interactive-title {
 
 
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-   
-   color: black;
-    
+
+    color: black;
+
     font-weight: 800;
-   
+
     border-bottom: solid #101113;
-    margin-top:20px;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 20px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 
 }
-.add span{
-    
-    font-family:  sans-serif;
+
+.add span {
+
+    font-family: sans-serif;
     font-weight: 1000;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 
-.adding__input{
+.adding__input {
 
     height: 30px;
 }
-.add button{
+
+.add button {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 800;
-   background-color: #fde910;
-   border: 0;
-   width: 200px;
-   height: 50px;
-   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fde910;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
 
 }
-.adding__input{
+
+.adding__input {
 
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
     border: 0;
@@ -361,8 +379,6 @@ margin-bottom:10px;
 /* Для фильмов и сериалов */
 
 
-.rightFilm{
-
-
-    
-}
+.rightFilm {}
+.FigureOfLeftFilm{}
+.FigureOfLeftSerials{}
