@@ -109,7 +109,7 @@ Main('nothing');
 {
   event.preventDefault();
  
-      if(input.value=='    '){
+      if(input.value==''){
 
       alert(`Пожалуйста,введите название фильма!`);
         
