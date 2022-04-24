@@ -109,7 +109,7 @@ Main('nothing');
 {
   event.preventDefault();
  
-      if(input.value==''){
+      if(input.value==''||input.value==null){
 
       alert(`Пожалуйста,введите название фильма!`);
         
@@ -394,13 +394,13 @@ NewFilmOnRight.forEach((item1,i) => {
 
 
 
-const LeftButton =document.querySelector(`.promo__menu-item_films `);
+const LeftButtonFilms =document.querySelector(`.promo__menu-item_films `);
 
 
 
 //Даннный класс предназнчен для формирования списка фильмов
 
-class Block_Of_Films_and_Serials{
+class Block_Of_Films{
 
 
 
@@ -434,16 +434,16 @@ push_new_film(text1,photoOfMovies){
 // создаём новые объеты  под фильмы
 
 
-const Something_film =  new Block_Of_Films_and_Serials();
+const Something_film =  new Block_Of_Films();
 
 
 
-  LeftButton.addEventListener(`click`,ForLeft)
+  LeftButtonFilms.addEventListener(`click`,ForLeftFilms)
  
   
  
 
-function ForLeft(){
+function ForLeftFilms(){
 
   hideAllWorkSpace()
 
@@ -460,6 +460,93 @@ function ForLeft(){
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const LeftButtonSeries =document.querySelector(`.promo__menu-item_series `);
+
+
+
+//Даннный класс предназнчен для формирования списка сериалов
+
+class Block_Of_Serials extends Block_Of_Films {
+
+
+
+push_new_film(text1,photoOfMovies){
+ 
+
+  this.text1=text1;
+  this.photoOfMovies=photoOfMovies;
+  Content.insertAdjacentHTML(`afterbegin`, `
+  
+  <div class="rightFilm" style=" display:flex;
+  flex-direction: column;  
+  justify-content: space-around;
+   width:300px; height:400px; margin:100px; font-family: 'Roboto', sans-serif;
+   font-weight: 800; font-size: 20px; text-align:center; text-align:bottom; ">
+
+  <div ><img src="forSerialsOnLeft/${photoOfMovies}.jpg " width="90%" height="90%" ></div>
+  <div >${text1}</div>
+  
+   </div>
+  
+  
+  
+
+  `);
+}
+
+
+
+
+}
+// создаём новые объеты  под фильмы
+
+
+const Something_Series =  new Block_Of_Serials();
+
+
+
+  LeftButtonSeries.addEventListener(`click`,ForLeftSeries)
+ 
+  
+ 
+
+function ForLeftSeries(){
+
+  hideAllWorkSpace()
+
+  Content.style.cssText = ` flex-direction:row; flex-wrap:wrap;`
+  Something_Series.push_new_film(`Шерлок`,`Шерлок`);
+  Something_Series.push_new_film(`Во все тяжкие`,`Во все тяжкие`);
+  Something_Series.push_new_film(`Доктор Хаус`,`Доктор Хаус`);
+  Something_Series.push_new_film(`Друзья`,`Друзья`);
+  Something_Series.push_new_film(`Игра Престолов`,`Игра Престолов`);
+  Something_Series.push_new_film(`Как я встретил вашу маму`,`Как я встретил вашу маму`);
+  Something_Series.push_new_film(`Клинника`,`Клинника`);
+  Something_Series.push_new_film(`Офис`,`Офис`);
+  Something_Series.push_new_film(`Сопрано`,`Сопрано`);
+
+}
 
 
 
