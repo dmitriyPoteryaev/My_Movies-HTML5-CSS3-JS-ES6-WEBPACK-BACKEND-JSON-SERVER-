@@ -398,10 +398,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    push_new_film(text1, photoOfMovies) {
+    push_new_film(text1, photoOfMovies,WayforFigure) {
 
       this.text1 = text1;
       this.photoOfMovies = photoOfMovies;
+      this.WayforFigure = WayforFigure;
       Content.insertAdjacentHTML(`afterbegin`, `
   
   <div class="rightFilm" style=" display:flex;
@@ -410,7 +411,7 @@ window.addEventListener('DOMContentLoaded', () => {
    width:300px; height:400px; margin:100px; font-family: 'Roboto', sans-serif;
    font-weight: 800; font-size: 20px; text-align:center; text-align:bottom; ">
 
-  <div><img class="FigureOfLeftFilm" src="forFilmOnLeft/${photoOfMovies}.jpg " width="90%" height="90%" ></div>
+  <div><img class="FigureOfLeftFilm" src="${WayforFigure}/${photoOfMovies}.jpg " width="90%" height="90%" ></div>
   <div >${text1}</div>
   
    </div>
@@ -442,15 +443,15 @@ window.addEventListener('DOMContentLoaded', () => {
     hideAllWorkSpace()
 
     Content.style.cssText = ` flex-direction:row; flex-wrap:wrap;`
-    Something_film.push_new_film(`Побег из Шоушенка`, `Побег из Шоушенка`);
-    Something_film.push_new_film(`Властелин Колец: Две крепости`, `Властелин Колец(Две крепости)`);
-    Something_film.push_new_film(`Криминальное чтиво`, `Криминальное чтиво`);
-    Something_film.push_new_film(`Интерстеллар`, `Интерстеллар`);
-    Something_film.push_new_film(`Отступники`, `Отступники`);
-    Something_film.push_new_film(`Тёмный Рыцарь`, `Тёмный Рыцарь`);
-    Something_film.push_new_film(`Гладиатор`, `Гладиатор`);
-    Something_film.push_new_film(`Джанго освобождённый`, `Джанго освобождённый`);
-    Something_film.push_new_film(`Поймай меня, если сможешь`, `Поймай меня, если сможешь`);
+    Something_film.push_new_film(`Побег из Шоушенка`, `Побег из Шоушенка`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Властелин Колец: Две крепости`, `Властелин Колец(Две крепости)`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Криминальное чтиво`, `Криминальное чтиво`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Интерстеллар`, `Интерстеллар`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Отступники`, `Отступники`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Тёмный Рыцарь`, `Тёмный Рыцарь`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Гладиатор`, `Гладиатор`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Джанго освобождённый`, `Джанго освобождённый`,`forFilmOnLeft`);
+    Something_film.push_new_film(`Поймай меня, если сможешь`, `Поймай меня, если сможешь`,`forFilmOnLeft`);
 
   }
 
@@ -506,33 +507,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    push_new_film(text1, photoOfMovies) {
-
-
-      this.text1 = text1;
-      this.photoOfMovies = photoOfMovies;
-      Content.insertAdjacentHTML(`afterbegin`, `
-  
-  <div class="rightFilm" style=" display:flex;
-  flex-direction: column;  
-  justify-content: space-around;
-   width:300px; height:400px; margin:100px; font-family: 'Roboto', sans-serif;
-   font-weight: 800; font-size: 20px; text-align:center; text-align:bottom; ">
-
-  <div><img class="FigureOfLeftSerials"  src="forSerialsOnLeft/${photoOfMovies}.jpg " width="90%" height="90%" ></div>
-  <div >${text1}</div>
-  
-   </div>
-  
-  
-  
-
-  `);
-    }
-
-
-
-
   }
   // создаём новые объеты  под фильмы
 
@@ -551,15 +525,15 @@ window.addEventListener('DOMContentLoaded', () => {
     hideAllWorkSpace()
 
     Content.style.cssText = ` flex-direction:row; flex-wrap:wrap;`
-    Something_Series.push_new_film(`Шерлок`, `Шерлок`);
-    Something_Series.push_new_film(`Во все тяжкие`, `Во все тяжкие`);
-    Something_Series.push_new_film(`Доктор Хаус`, `Доктор Хаус`);
-    Something_Series.push_new_film(`Друзья`, `Друзья`);
-    Something_Series.push_new_film(`Игра Престолов`, `Игра Престолов`);
-    Something_Series.push_new_film(`Как я встретил вашу маму`, `Как я встретил вашу маму`);
-    Something_Series.push_new_film(`Клинника`, `Клинника`);
-    Something_Series.push_new_film(`Офис`, `Офис`);
-    Something_Series.push_new_film(`Сопрано`, `Сопрано`);
+    Something_Series.push_new_film(`Шерлок`, `Шерлок`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Во все тяжкие`, `Во все тяжкие`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Доктор Хаус`, `Доктор Хаус`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Друзья`, `Друзья`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Игра Престолов`, `Игра Престолов`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Как я встретил вашу маму`, `Как я встретил вашу маму`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Клинника`, `Клинника`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Офис`, `Офис`,`forSerialsOnLeft`);
+    Something_Series.push_new_film(`Сопрано`, `Сопрано`,`forSerialsOnLeft`);
 
   }
 
@@ -669,6 +643,79 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   });
+
+
+
+
+
+
+  // модальное окно(pop in)
+
+
+
+const LeftMenu = document.querySelector(`.promo__menu`),
+ buttoForLeftMenu=document.querySelector(`.PopUpForPromoMenu`);
+
+
+
+
+
+ buttoForLeftMenu.addEventListener(`click`,() =>{
+
+
+  // данные методы нужны,чтобы при клике  показать модальное окно(Меню)
+  // И не скролить страницу
+  // Когда мы обратно нажимаем на меню-->модальное окно убирается и мы можем скролить страницу
+  LeftMenu.classList.toggle(`ForShowBlock`);
+  document.body.classList.toggle(`ForNoScrollBlock`);
+
+
+ });
+
+
+ function ForLeftMenu(){
+
+  LeftMenu.classList.remove(`ForShowBlock`);
+  document.body.classList.remove(`ForNoScrollBlock`);
+
+
+ };
+
+
+ Content.addEventListener(`click`,() =>{
+  ForLeftMenu();
+
+
+ });
+
+
+
+ document.addEventListener(`keydown`,(event) =>{
+
+
+  if(event.code==="Escape"){
+    ForLeftMenu();
+}
+
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

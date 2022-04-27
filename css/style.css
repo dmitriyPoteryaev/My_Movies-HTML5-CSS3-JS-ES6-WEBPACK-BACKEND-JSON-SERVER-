@@ -1,18 +1,17 @@
 /* Задид main как flex-box */
 .promo {
-
+    font-family: 'Roboto', sans-serif;
     display: flex;
     border: solid;
-    /* это потом нужно удалить */
     border-bottom: 0px;
-    /* это потом нужно удалить */
-    justify-content: space-between;
-
+    border-left: 0px;
+    border-top: 0px;
+   justify-content: space-between;
     margin-left: -1px;
     margin-right: -1px;
     min-height: 1500px;
     margin: auto;
-    min-width: 2200px;
+    min-width: 1000px;
     margin-top: 100px;
 
 }
@@ -24,9 +23,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 70%;
+    width: 85%;
     background-size: 100% 60%;
     flex-shrink: 3;
+   
 
 
 }
@@ -101,13 +101,15 @@
 
 
 .promo__menu {
-
-    background-color: #101113;
-
+    position: fixed;
+    display: none;
+    left:0px;
+    background-color: rgba(0, 0, 0, 0.8);
     margin-right: 0px;
     width: 15%;
     flex-shrink: 1;
     text-align: center;
+    height:1000px;
 
 }
 
@@ -126,7 +128,7 @@
     font-size: 30px;
     color: white;
     border: 0;
-    background-color: #101113;
+    
     margin-bottom: 10px;
     margin-top: 20px;
     padding-left: 10px;
@@ -215,21 +217,25 @@
 
 .header {
     display: flex;
-    margin: auto;
+  
     background-color: white;
     position: fixed;
-    top: -5px;
+    top:-5px;
     width: 100%;
     height: 100px;
-    justify-content: space-around;
-
+   justify-content: space-between;
+   align-items:center;
+    
+   font-family: 'Roboto', sans-serif;
+   font-weight: 800;
+   font-size: 20px;
 
 
 }
 
 .header__search {
-    align-self: center;
-
+ 
+align-self: center;
 }
 
 .header__search input {
@@ -243,10 +249,19 @@
 }
 
 .header__logo {
-
     align-self: center;
-
+  
+   
 }
+
+.PopUpForPromoMenu {
+   display: flex;
+
+ align-items: center;
+    
+    align-self: center;
+}
+
 
 
 
@@ -382,3 +397,25 @@
 .rightFilm {}
 .FigureOfLeftFilm{}
 .FigureOfLeftSerials{}
+
+
+
+
+/* Для различных манипуляций с модальным окном */
+.ForShowBlock{
+
+    display: block;
+}
+.ForHideBlock{
+
+    display: none;
+}
+.ForScrollBlock{
+
+    overflow: scroll;
+}
+.ForNoScrollBlock{
+
+    overflow: hidden;
+}
+
