@@ -1,18 +1,12 @@
 /* Задид main как flex-box */
 .promo {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    border: solid;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-top: 0px;
-   justify-content: space-between;
+    display: flex;   
     margin-left: -1px;
-    margin-right: -1px;
-    min-height: 1500px;
-    margin: auto;
-    min-width: 1000px;
-    margin-top: 100px;
+    margin-right: -10px;
+    margin-top: 90px;
+    height: 100vh;
+   
 
 }
 
@@ -20,64 +14,100 @@
 
 /* CENTER */
 .promo__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 85%;
-    background-size: 100% 60%;
-    flex-shrink: 3;
-   
+    margin: auto;
+      
+    max-width:1500px;
+    margin-top: 0px;
+    height: 100vh;
+     justify-content: center;
+
+
+    
 
 
 }
 
 
-/* вложенности promo-content'a */
-.promo__interactive {
 
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    height: 40vh;
 
-}
+
+
+
+
+
+
+
 
 
 /* бек центральной части */
 
 
 
+.Center{
+
+    display: flex;
+    width:1300px;
+    justify-content: space-around;
+    background-color:white ;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
 .promo__bg {
 
-    margin-top: 150px;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    color: white;
-    max-width: 1000px;
-
+    
+ 
+    width:450px;
+    height:600px; 
+    margin-top:100px;
 
 
 }
 
-.promo__bg .promo__title {
 
-    margin-top: 10px;
+.promo__allabout{
+
+    width:300px;
+    margin-top:100px;
+}
+.promo__allabout .promo__title {
+
+    margin-top: 20px;
     font-size: 40px;
 
 }
 
-.promo__bg .promo__ratings {
-    margin-top: 20px;
+.promo__allabout .promo__ratings {
+    margin-top: 30px;
+    font-size: 40px;
     color: #fde910;
 }
 
-.promo__descr {
-
+ .promo__descr {
+margin-top: 100px;
     font-size: 30px;
-    color: white;
+    width:1300px;
+    text-align: center;
+    color: black;
 }
+
+@media (max-width: 700px) {
+
+    .Center { 
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: center;
+
+        width:500px;
+        padding-bottom: 150px;
+    }
+    .promo__descr {
+
+
+        width:400px;
+    }
+}
+
 
 
 
@@ -103,13 +133,15 @@
 .promo__menu {
     position: fixed;
     display: none;
-    left:0px;
+        left:0px;
     background-color: rgba(0, 0, 0, 0.8);
-    margin-right: 0px;
-    width: 15%;
-    flex-shrink: 1;
     text-align: center;
-    height:1000px;
+    margin:auto;
+    height: 30vh;
+  
+    
+   
+justify-content: space-between;
 
 }
 
@@ -121,35 +153,21 @@
 }
 
 
-.promo__menu-item_films,
-.promo__menu-item_series {
+.promo__menu-item_top_films_and_serials,
+.promo__menu-item_your_love,
+.promo__menu-item_order_ticket,
+.promo__menu-item_top {
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+
+ 
+
     color: white;
-    border: 0;
-    
     margin-bottom: 10px;
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 20px;
 
 }
-
-.promo__menu-item_films:hover {
-
-    border-left: solid #fde910;
-
-
-}
-
-.promo__menu-item_series:hover {
-
-    border-left: solid #fde910;
-
-
-}
-
 
 
 
@@ -159,108 +177,80 @@
 
 }
 
-.promo__menu__title {
-    font-family: 'Roboto', sans-serif;
+.promo__heart__film,
+.promo__heart__serials,
+.promo__heart__new {
     font-size: 30px;
-
+background-color:black;
     color: #fde910;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RIGHT*/
-
-.promo__adv {
-    font-family: 'Roboto', sans-serif;
-    background-color: #101113;
-    font-size: 30px;
-    margin-left: 0px;
-    width: 15%;
-    flex-shrink: 1;
-    text-align: center;
-}
-
-.promo__adv-title {
-
-
-    color: #fde910;
-
-
-}
-
-.promo__adv-title {
-
-    margin-top: 20px;
-    color: #fde910;
+    margin-bottom: 20px;
 
 
 }
 
 
-/* TOP PART OF WEB-SITE*/
+
+
+@media (max-width: 700px) {
+
+    .promo__menu { 
+        display: flex;
+        right:0px;
+        bottom:0px;
+        height: 12vh;
+justify-content: space-between;
+    width:700px;    
+    }
+    .promo__menu-list{
+
+
+        display: flex;
+    }
+    .promo__adv-title{
+
+
+        display: none;
+    }
+    .promo__menu__title{
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .promo__menu { 
+        width:650px;
+    }
+}
+@media (max-width: 600px) {
+    .promo__menu { 
+        width:600px;
+    }
+}
+@media (max-width: 500px) {
+    .promo__menu { 
+        width:500px;
+    }
+}
 
 
 
-.header {
-    display: flex;
-  
-    background-color: white;
-    position: fixed;
-    top:-5px;
-    width: 100%;
-    height: 100px;
-   justify-content: space-between;
-   align-items:center;
+/* сердечко */
+
+
+
+.heart{
+
+    display: none;
+    width:400px;
+    height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    align-content:center;
     
-   font-family: 'Roboto', sans-serif;
-   font-weight: 800;
-   font-size: 20px;
-
-
-}
-
-.header__search {
- 
-align-self: center;
-}
-
-.header__search input {
-    border: 0;
-    border-bottom: solid #101113;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-
-
-}
-
-.header__logo {
-    align-self: center;
-  
-   
-}
-
-.PopUpForPromoMenu {
-   display: flex;
-
- align-items: center;
     
-    align-self: center;
-}
+    }
+    
 
 
 
@@ -269,46 +259,34 @@ align-self: center;
 
 
 
+/* Интерактивное меню с любимыми фильмами пользователя */
+.promo__interactive {
+    display:none;
+    justify-content: space-around;
+    margin: auto;
 
-
-
-
-
-
-
-
-/* всё что осталось */
-
-
-
-
-
-
-
-
-.new_film {
-
-    color: white;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 20px;
-
-}
-
-.new_film_active:hover {
-
-    border-left: solid #fde910;
-
+    
 
 }
 
 
+@media (max-width: 700px) {
+
+    .promo__interactive { 
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: center;
+
+        width:500px;
+        padding-bottom: 150px;
+    }
+}
 
 
 
+/* Правая часть интерактивного меню(список фильмов) */
 .promo__interactive-item {
+    
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: black;
@@ -324,10 +302,36 @@ align-self: center;
 
 }
 
+/* Оформление фильмов,которые находятся в интерактивном меню */
 .promo__interactive-list li {
     list-style-type: none;
 
 }
+.adding__input {
+
+    height: 30px;
+}
+
+.add button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 800;
+    background-color: #fde910;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.adding__input {
+
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+    border: 0;
+}
+
+
+
 
 .add {
     display: flex;
@@ -363,28 +367,74 @@ align-self: center;
 }
 
 
-.adding__input {
 
-    height: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+/* Хедер сайта*/
+
+
+.promo__adv-title {
+
+    margin-top: 20px;
+    color: #fde910;
+
+
 }
 
-.add button {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 800;
-    background-color: #fde910;
-    border: 0;
-    width: 200px;
-    height: 50px;
-    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+
+
+
+
+
+.header {
+    display: flex;
+  
+    background-color: black;
+    position: fixed;
+    top:-5px;
+    width: 100%;
+    height: 100px;
+   justify-content: space-between;
+   align-items:center;
+    
+   font-family: 'Roboto', sans-serif;
+   font-weight: 800;
+   font-size: 20px;
+   margin-left: -10px;
+   margin-right: -10px;
+
 
 }
 
-.adding__input {
 
-    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
-    border: 0;
+
+
+.header__logo {
+    align-self: center;
+  
+   
 }
+
+.PopUpForPromoMenu {
+   display: flex;
+
+ align-items: center;
+    
+    align-self: center;
+}
+
+
+
 
 
 
@@ -410,12 +460,166 @@ align-self: center;
 
     display: none;
 }
-.ForScrollBlock{
 
-    overflow: scroll;
-}
-.ForNoScrollBlock{
 
-    overflow: hidden;
-}
 
+
+/* для уведомления при POST-запросах */
+.blockofmodal{
+
+    width:300px;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    height:30px;
+    margin-top: 100px;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* Фильтр */
+
+    .ForSortFilms, .ForSortSerials{
+
+        width:1200px;
+        margin: auto;
+        border-bottom:solid;
+        border-top:solid;
+border-color: #fde910;
+margin-top:50px ;
+
+    }
+
+    .SortFilms ,.SortSerials{
+margin:auto;
+flex-wrap: wrap;
+height:90vh;
+justify-content: center;
+margin-top: 150px;
+margin-bottom: 10px;
+
+font-family: 'Roboto', sans-serif;
+
+
+    }
+ 
+    .container{
+
+        padding-left: 10px;
+        margin-bottom: 1px;
+        font-size: 22px;
+        text-align: center;
+        width:350px;
+        margin:10px;
+        padding-bottom: 0px;
+        height: 50px;
+    }
+
+    .container:hover{
+
+        border-bottom:solid;
+        border-color: #fde910;
+        
+        color: black ;
+        font-size: 32px;
+      
+      
+
+
+    }
+    @media (max-width: 700px) {
+
+        .ForSortFilms ,.ForSortSerials { 
+         
+         
+           
+          
+            width:300px;
+           
+            border-bottom:solid;
+            
+           
+
+            
+        }
+        .SortFilms , .SortSerials{ 
+            
+            overflow-y: scroll;
+           
+            flex-wrap: wrap;
+            height: 300px;
+            width:300px;
+        }
+            
+
+    }
+    @media (max-width: 1000px) {
+
+        .ForSortFilms, .ForSortSerials { 
+         
+       
+           
+           
+            width:1000px;
+           
+           
+            
+        }
+            
+
+    }
+    @media (max-width: 900px) {
+
+        .ForSortFilms ,.ForSortSerials { 
+         
+       
+           
+           
+            width:900px;
+           
+
+            
+        }
+            
+
+    }
+    @media (max-width: 800px) {
+
+        .ForSortFilms , .ForSortSerials { 
+         
+       
+           
+           
+            width:800px;
+           
+
+            
+        }
+            
+
+    }
+
+
+
+    /* Чтобы ориентироваться в фильтрации */
+
+
+    .SortOfContentFilms, .SortOfContentSerials{
+
+        margin:auto;
+        margin-top: 50px; 
+        margin-bottom: 50px; 
+        font-family: 'Roboto', sans-serif; 
+         font-size: 40px;
+         width:600px;
+         text-align: center;
+         
+    }
