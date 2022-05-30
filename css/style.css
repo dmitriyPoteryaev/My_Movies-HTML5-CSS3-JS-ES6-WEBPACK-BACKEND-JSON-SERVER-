@@ -153,7 +153,7 @@ justify-content: space-between;
 }
 
 
-.promo__menu-item_top_films_and_serials,
+.promo__menu-item_order_calc,
 .promo__menu-item_your_love,
 .promo__menu-item_order_ticket,
 .promo__menu-item_top {
@@ -623,3 +623,249 @@ font-family: 'Roboto', sans-serif;
          text-align: center;
          
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ДЛЯ ЗАКАЗА БИЛЕТА */
+
+
+    .body {
+
+
+        background-color: rgba(0, 0, 0, 0.8);
+    
+    }
+    
+    
+    
+    
+    .blockofmodal {
+    
+        width: 300px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        height: 30px;
+        margin-top: 10px;
+    
+    }
+    
+    
+    
+    .Header {
+    
+        width: 300px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        height: 30px;
+        margin-top: 10px;
+    
+    }
+    
+    
+    .SendQuery {
+    
+        width: 150px;
+        color: black;
+    }
+    
+    
+    .modal {
+    
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+    
+    
+    }
+    
+    .ListOfcinema {
+    
+    
+        display: none;
+    
+        width: 200px;
+        height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* для показа каких-то блоков */
+    
+    
+    .show {
+    
+        display: block;
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .calculating {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 500px;
+        margin: auto;
+     text-align: center;
+      height: 50vh;
+      margin-bottom: 200px;
+      
+    }
+
+    
+    .calculating .title {
+        text-align: center
+    }
+    
+     .calculating__field {
+      
+        margin-top: 50px;
+        background: rgba(146, 242, 255, .15);
+        padding: 30px 0 40px 0;
+        width: 100vh;
+    }
+    
+    .calculating__subtitle {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 30px
+    }
+    
+  .calculating__subtitle:first-child {
+        margin-top: 0
+    }
+    
+     .calculating #gender:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 16px;
+        height: 16px;
+        
+    }
+    
+     .calculating__choose {
+        position: relative;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center
+    }
+    
+  .calculating__choose-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 50px;
+        padding: 0 10px;
+        background: #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        outline: 0;
+        transition: .3s all
+    }
+
+
+    @media (max-width: 600px) {
+
+        .calculating__choose { 
+         
+       
+           
+           
+           flex-wrap: wrap;
+           
+
+            
+        }
+            
+
+    }
+
+
+    @media (max-width: 600px) {
+
+        .calculating__field { 
+         
+       
+           
+           
+            width:510px;
+           
+
+            
+        }
+            
+
+    }
+
+
+
+    
+    .calculating__choose-item_active {
+        color: #fff;
+        background-color: #54ed39
+    }
+    
+    .calculating__choose_medium {
+        width: 500px;
+        justify-content: space-between;
+        margin: 30px auto 0 auto
+    }
+    
