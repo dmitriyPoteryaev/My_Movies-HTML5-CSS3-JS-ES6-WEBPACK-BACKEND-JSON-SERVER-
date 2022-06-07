@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development  webpack-dev-server --mode development --open",
     "backend": "json-server ./src/fetch/db.json",
-    "start:backend": "npm run start & npm run backend",
+    "start:backend": "npm run start ",
     "build:backend": "npm run build && npm run backend"
   },
   "repository": {
