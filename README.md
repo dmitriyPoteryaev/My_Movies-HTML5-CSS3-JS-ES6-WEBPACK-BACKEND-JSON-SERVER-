@@ -1,4 +1,4 @@
-# My_Movies
+# My_Movies(HTML5,CSS3,JS,ES6,WEBPACK,BACKEND,JSON-SERVER)
 
 ## Как запустить проект
 - `npm install` - устанавливаем зависимости
